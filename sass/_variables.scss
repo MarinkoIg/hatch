@@ -1,0 +1,35 @@
+$colors: (
+    "nav" : (
+        'background' : #fff,
+        'text' : #000,
+        'text--hover' : #02A0C5,
+        'text--shadow' : rgba(150, 150, 150, 1)
+    ),
+    'slider--top' : (
+        'text' : #fff
+    ),
+    'parallax' : (
+        'background' : #E8E6E7,
+        'text' : #000
+    ),
+    'pictures' : (
+        'info-block__top--background' : #fff,
+        'info-block__bottom-left--background' : #E2EE10,
+        'info-block__bottom-right--background' : #00CEDB,
+        'text' : #000
+    ),
+    'galery' : (
+        'arrows' : #E2EE10
+    ),
+    'footer' : (
+        'top--background' : #F8F7F3,
+        'top--text' : #000,
+        'middle-info--background' : #14BFC9,
+        'info-titles' : #000,
+        'info-text' : #fff,
+        'icons--background' : #000,
+        'icons' : #14BFC9,
+        'bottom--background' : #000,
+        'bottom--text' : lighten(#585858, 10%)
+    )
+)

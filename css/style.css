@@ -1,0 +1,443 @@
+.lay-img {
+  display: block;
+  margin: auto; }
+
+.test-body {
+  background-color: #000; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  background: gray; }
+
+h1, h2, h3, h4, h5, h6, span, p {
+  cursor: default; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:focus, a:visited {
+    text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+.content-wrap {
+  background-color: #000;
+  height: 100px;
+  position: relative;
+  height: auto;
+  padding-right: 130px;
+  padding-left: 0; }
+
+.no-lr-padding {
+  padding-right: 0;
+  padding-left: 0; }
+
+.no-lr-margin {
+  margin-right: 0;
+  margin-left: 0; }
+
+.component--footer .footer__top {
+  background-color: #F8F7F3;
+  height: 150px;
+  position: relative; }
+  .component--footer .footer__top p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.1;
+    cursor: pointer; }
+
+.component--footer .footer__middle {
+  height: 368px; }
+
+.component--footer #map {
+  height: 100%; }
+
+.component--footer .info {
+  background-color: #14BFC9;
+  height: 100%; }
+  .component--footer .info .wrap--info-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .component--footer .info .wrap--info-content span {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 500;
+      display: inline-block;
+      margin-top: 20px; }
+      .component--footer .info .wrap--info-content span:first-of-type {
+        margin-top: 0; }
+    .component--footer .info .wrap--info-content p {
+      color: #fff;
+      font-size: 13px; }
+  .component--footer .info .wrap--icons-social {
+    margin-top: 10px; }
+  .component--footer .info .social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 4em;
+    background-color: #000;
+    padding-top: 4px; }
+  .component--footer .info .link--social-icon {
+    margin-right: 10px; }
+    .component--footer .info .link--social-icon:last-of-type {
+      margin-right: 0; }
+  .component--footer .info .icon--social {
+    color: #14BFC9;
+    font-size: 15px; }
+
+.component--footer .footer__bottom {
+  background-color: #000;
+  height: 188px;
+  position: relative; }
+  .component--footer .footer__bottom p {
+    color: #727272;
+    font-size: 11px;
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%; }
+
+.component--galery .slide--galery {
+  width: 200px; }
+  .component--galery .slide--galery img {
+    width: 100%;
+    height: 214px; }
+
+.component--galery .slick-prev {
+  left: 20px;
+  z-index: 200; }
+
+.component--galery .slick-next {
+  right: 20px;
+  z-index: 200; }
+
+.component--galery .slick-prev:before, .component--galery .slick-next:before {
+  font-size: 26px;
+  color: #E2EE10; }
+
+.component--nav {
+  width: 130px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 300;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  cursor: pointer; }
+
+.wrap--nav {
+  position: fixed;
+  height: 100%; }
+
+.component--nav.open, .wrap--nav.open {
+  width: 350px; }
+
+.wrap--icon {
+  position: relative;
+  height: 85px; }
+
+.icon--burger {
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  left: 46px;
+  top: 9px; }
+
+.text--menu {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #000;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 43px;
+  font-size: 15px; }
+
+.icon--burger.hide, .text--menu.hide {
+  display: none; }
+
+.icon--close {
+  font-size: 35px;
+  color: #000;
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  cursor: pointer; }
+
+.icon--close.display {
+  display: inline-block; }
+
+.sidenav {
+  display: none;
+  transition: all 0.5s; }
+
+.sidenav.display {
+  display: block; }
+
+.sidenav {
+  margin-top: 120px; }
+  .sidenav ul {
+    list-style: none;
+    padding-left: 53px; }
+  .sidenav .link--nav-page {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 8px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: 0px 1px 0px #969696; }
+    .sidenav .link--nav-page:hover {
+      color: #02A0C5; }
+  .sidenav .link--nav-page.active {
+    color: #02A0C5; }
+
+.component--parallax {
+  background-color: #E8E6E7;
+  height: 470px; }
+  .component--parallax .parallax {
+    background-image: url("../images/layer--parallax.jpg");
+    height: 470px;
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: relative; }
+    .component--parallax .parallax__title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 31px;
+      font-weight: 700;
+      color: #000;
+      width: 100%;
+      text-align: center; }
+  .component--parallax .static {
+    background: url("../images/layer--static.jpg") no-repeat center center;
+    background-size: cover;
+    height: 470px; }
+
+.component--pictures {
+  height: auto; }
+  .component--pictures .buttons, .component--pictures .pictures {
+    height: 890px;
+    padding: 0; }
+  .component--pictures .buttons {
+    position: relative;
+    cursor: pointer; }
+    .component--pictures .buttons .top {
+      background: #fff;
+      height: 50%; }
+    .component--pictures .buttons .bottom--left {
+      background-color: #E2EE10;
+      height: 50%; }
+    .component--pictures .buttons .bottom--right {
+      background-color: #00CEDB;
+      height: 50%; }
+    .component--pictures .buttons .box-button {
+      padding: 0; }
+    .component--pictures .buttons .box--text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #000; }
+      .component--pictures .buttons .box--text h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 26px;
+        cursor: pointer; }
+      .component--pictures .buttons .box--text p {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1.1;
+        cursor: pointer; }
+  .component--pictures .pictures img {
+    width: 100%;
+    height: 100%; }
+
+.component--slider-top .logo {
+  position: absolute;
+  left: 113px;
+  top: 32px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 34px; }
+
+.slider--top {
+  height: 700px; }
+  .slider--top .slick-track {
+    height: 700px; }
+  .slider--top .slick-slide {
+    position: relative; }
+  .slider--top .slide__title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 49px;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    text-align: center; }
+  .slider--top img {
+    width: 100%;
+    height: 100%; }
+
+.test--p {
+  color: #fff; }
+
+@media (max-width: 1559px) {
+  .content-wrap {
+    padding-right: 90px; }
+  .component--nav {
+    width: 90px; }
+  .icon--burger {
+    left: 27px; }
+  .text--menu {
+    left: 23px; }
+  .component--nav.open, .wrap--nav.open {
+    width: 240px; }
+  .slider--top {
+    height: auto; }
+    .slider--top .slick-track {
+      height: 600px; }
+    .slider--top .slide__title {
+      font-size: 40px; } }
+
+@media (max-width: 1540px) {
+  .component--pictures .buttons, .component--pictures .pictures {
+    height: 740px; }
+  .component--galery .slide--galery img {
+    height: 200px; } }
+
+@media (max-width: 1360px) {
+  .component--pictures .buttons, .component--pictures .pictures {
+    height: 584px; }
+  .component--galery .slide--galery img {
+    height: 164px; } }
+
+@media (max-width: 1199px) {
+  .content-wrap {
+    padding-right: 60px; }
+  .component--nav {
+    width: 60px; }
+  .icon--burger {
+    left: 10px; }
+  .text--menu {
+    display: none; }
+  .slider--top .slide__title {
+    font-size: 34px; } }
+
+@media (max-width: 1199px) and (min-height: 1067px) {
+  .component--parallax .parallax {
+    background-position: left center; } }
+
+@media (max-width: 991px) {
+  .slider--top .slick-track {
+    height: 500px; }
+  .slider--top .slide__title {
+    font-size: 32px; }
+  .component--parallax {
+    height: auto; }
+    .component--parallax .parallax {
+      background-size: 100%; }
+  .component--pictures {
+    height: auto; }
+    .component--pictures .buttons {
+      height: auto; }
+      .component--pictures .buttons .top, .component--pictures .buttons .bottom--right, .component--pictures .buttons .bottom--left {
+        height: 300px; }
+      .component--pictures .buttons .box--text {
+        text-align: center; }
+    .component--pictures .pictures {
+      display: none; }
+  .component--footer .footer__middle {
+    height: 316px; } }
+
+@media (max-width: 860px) and (min-height: 1073px) {
+  .component--parallax .parallax {
+    background-position: left top; } }
+
+@media (max-width: 860px) {
+  .slider--top .slick-track {
+    height: 400px; }
+  .component--parallax .parallax, .component--parallax .static {
+    height: 300px; }
+  .component--parallax .parallax__title {
+    font-size: 25px; } }
+
+@media (max-width: 767px) {
+  .slider--top .slick-track {
+    height: 350px; }
+  .component--footer .footer__middle {
+    height: 600px; }
+  .component--footer .info, .component--footer #map {
+    height: 50%; } }
+
+@media (max-width: 600px) {
+  .slider--top .slick-track {
+    height: 300px; }
+  .component--slider-top .logo {
+    left: 18px;
+    top: -8px; }
+  .slider--top .slide__title {
+    font-size: 21px; }
+  .component--parallax .parallax {
+    background-position: left top; }
+  .component--parallax .parallax, .component--parallax .static {
+    height: 260px; }
+  .component--parallax .parallax__title {
+    font-size: 16px; }
+  .component--pictures .buttons .box--text h3 {
+    font-size: 16px; }
+  .component--pictures .buttons .box--text p {
+    font-size: 15px; }
+  .component--pictures .buttons .top, .component--pictures .buttons .bottom--left, .component--pictures .buttons .bottom--right {
+    height: 260px; } }
+
+@media (max-width: 433px) {
+  .slider--top .slick-track {
+    height: 250px; }
+  .component--galery .slide--galery img {
+    height: 200px; }
+  .component--footer .footer__middle {
+    height: 534px; } }
+
+@media (max-width: 380px) {
+  .slider--top .slick-track {
+    height: 200px; }
+  .content-wrap {
+    padding-right: 40px; }
+  .component--nav {
+    width: 40px; }
+  .icon--burger {
+    font-size: 27px;
+    left: 7px; }
+  .slider--top .slide__title {
+    font-size: 17px; } }

@@ -1,0 +1,131 @@
+.component--footer {
+
+    $footerPalette: get-palette('footer');
+    $top--background: get-color('top--background', $footerPalette);
+    $top--text: get-color('top--text', $footerPalette);
+    $middle-info--background: get-color('middle-info--background', $footerPalette);
+    $info-titles: get-color('info-titles', $footerPalette);
+    $info-text: get-color('info-text', $footerPalette);
+    $icons--background: get-color('icons--background', $footerPalette);
+    $icons: get-color('icons', $footerPalette);
+    $bottom--background: get-color('bottom--background', $footerPalette);
+    $bottom--text: get-color('bottom--text', $footerPalette);
+
+    .footer__top {
+
+        background-color: $top--background;
+        height: 150px;
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $top--text;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.1;
+            cursor: pointer;
+        }
+
+    }
+
+    .footer__middle {
+        height: 368px;
+    }
+
+    #map {
+        height: 100%;
+    }
+
+    .info {
+
+        background-color: $middle-info--background;
+        height: 100%;
+
+        .wrap--info-content {
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+
+            span {
+
+                color: $info-titles;
+                text-transform: uppercase;
+                font-weight: 500;
+                display: inline-block;
+                margin-top: 20px;
+
+                &:first-of-type{
+                    margin-top: 0;
+                }
+
+            }
+
+            p {
+                color: $info-text;
+                font-size: 13px;
+            }
+
+        }
+
+        .wrap--icons-social {
+            margin-top: 10px;
+        }
+
+
+        .social {
+
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 4em;
+            background-color: $icons--background;
+            padding-top: 4px;
+
+        }
+
+        .link--social-icon {
+
+            margin-right: 10px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+            
+        }
+
+        .icon--social {
+            color: $icons;
+            font-size: 15px;
+        }
+
+    }
+
+    .footer__bottom {
+
+        background-color: $bottom--background;
+        height: 188px;
+        position: relative;
+
+        p {
+            color: $bottom--text;
+            font-size: 11px;
+            font-weight: 800;
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+    }
+
+}

@@ -1,0 +1,41 @@
+.component--parallax {
+
+    $parallaxPalette: get-palette('parallax');
+    $background: get-color('background', $parallaxPalette);
+    $text: get-color('text', $parallaxPalette);
+
+    background-color: $background;
+    height: 470px;
+
+    .parallax {
+
+        background-image: url("../images/layer--parallax.jpg");
+        height: 470px;
+        background-attachment: fixed;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        position: relative;
+
+        &__title {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 31px;
+            font-weight: 700;
+            color: $text;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    .static {
+        background: url("../images/layer--static.jpg") no-repeat center center;
+        background-size: cover;
+        height: 470px;
+    }
+
+}

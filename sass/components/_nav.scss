@@ -1,0 +1,110 @@
+$navPalette: get-palette('nav');
+$background: get-color('background', $navPalette);
+$nav-text: get-color('text', $navPalette);
+$nav-text--hover: get-color('text--hover', $navPalette);
+$nav-text--shadow: get-color('text--shadow', $navPalette);
+
+.component--nav {
+    width: 130px;
+    height: 100%;
+    background-color: $background;
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.wrap--nav {
+    position: fixed;
+    height: 100%;
+}
+
+.component--nav.open, .wrap--nav.open {
+    width: 350px;
+}
+
+.wrap--icon {
+    position: relative;
+    height: 85px;
+}
+
+.icon--burger {
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 46px;
+    top: 9px;
+}
+
+.text--menu {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $nav-text;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 43px;
+    font-size: 15px;
+}
+
+.icon--burger.hide, .text--menu.hide {
+    display: none;
+}
+
+.icon--close {
+    font-size: 35px;
+    color: $nav-text;
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.icon--close.display {
+    display: inline-block;;
+}
+
+.sidenav {
+    display: none;
+    transition: all 0.5s;
+}
+
+.sidenav.display {
+    display: block;
+}
+
+.sidenav {
+
+    margin-top: 120px;
+
+    ul {
+        list-style: none;
+        padding-left: 53px;
+    }
+
+    .link--nav-page {
+
+        color: $nav-text;
+        text-transform: uppercase;
+        font-weight: 700;
+         margin-top: 8px;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        font-family: 'Noto Sans', sans-serif;
+        text-shadow: 0px 1px 0px $nav-text--shadow;
+
+        &:hover {
+            color: $nav-text--hover;
+        }
+
+    }
+
+    .link--nav-page.active {
+        color: $nav-text--hover;
+    }
+
+}

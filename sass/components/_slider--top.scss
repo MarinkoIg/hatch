@@ -1,0 +1,52 @@
+$slider--topPalette: get-palette('slider--top');
+$slider-text: get-color('text', $slider--topPalette);
+
+.component--slider-top {
+
+    .logo {
+        position: absolute;
+        left: 113px;
+        top: 32px;
+        color: $slider-text;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+}
+
+.slider--top {
+
+    height: 700px;
+
+    .slick-track {
+        height: 700px;
+    }
+
+    .slick-slide {
+        position: relative;
+    }
+
+    .slide__title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 49px;
+        font-weight: 700;
+        margin: 0;
+        font-family: 'Noto Sans', sans-serif;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.test--p {
+    color: $slider-text;
+}

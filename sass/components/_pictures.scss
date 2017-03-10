@@ -1,0 +1,75 @@
+.component--pictures {
+
+    $picturesPalette: get-palette('pictures');
+    $info-block__top--background: get-color('info-block__top--background', $picturesPalette);
+    $info-block__bottom-left--background: get-color('info-block__bottom-left--background', $picturesPalette);
+    $info-block__bottom-right--background: get-color('info-block__bottom-right--background', $picturesPalette);
+    $text: get-color('text', $picturesPalette);
+
+    height: auto;
+
+    .buttons, .pictures {
+        height: 890px;
+        padding: 0;
+    }
+
+    .buttons {
+
+        position: relative;
+        cursor: pointer;
+
+        .top {
+            background: $info-block__top--background;
+            height: 50%;
+        }
+
+        .bottom--left {
+            background-color: $info-block__bottom-left--background;
+            height: 50%;
+        }
+
+        .bottom--right {
+            background-color: $info-block__bottom-right--background;
+            height: 50%;
+        }
+
+        .box-button {
+            padding: 0;
+        }
+
+        .box--text {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $text;
+
+            h3 {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 26px;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 1.1;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+    .pictures {
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+}

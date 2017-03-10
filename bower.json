@@ -1,0 +1,21 @@
+{
+  "name": "hatch",
+  "authors": [
+    "Igor Marinkovic <marigorinkovic@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}
