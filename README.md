@@ -1,2 +1,5 @@
 # hatch
-Hatch is a home page template for shoes store.
+
+- PSD To HTML
+- Bootstrap
+- jQuery
